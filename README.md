@@ -1,4 +1,4 @@
-# 👻 GhostShadX
+# 👿 GhostShadX
 
 An advanced Python-based **VPN control & privacy management tool** with support for **WireGuard**, **Kill Switch**, **Public IP tracking**, **Log cleaner**, and an optional **GUI interface** — built for cybersecurity tasks, penetration testing, and online anonymity.
 
