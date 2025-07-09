@@ -17,45 +17,113 @@ An advanced Python-based **VPN control & privacy management tool** with support 
 
 ---
 
-## 📸 Screenshots
-
-> (Add your screenshots here once available)
 
 
 
 
+## 🔐 VPN Setup Guide (IMPORTANT)
+
+GhostShadX requires your own VPN configuration file to work.
+📥 Get Free WireGuard Config from ProtonVPN
+
+- Go to: https://account.protonvpn.com/login
+- Sign in (or sign up for a free account)
+- Navigate to: Downloads → WireGuard Config Generator
+- Select:
+- Platform: GNU/Linux
+- Server: Choose any free server (e.g., NL-FREE#226)
+- Device name: GhostShadX-WG
+- Click Create and download the .conf file.
 
 ---
 
-## ⚙️ Installation
 
-```bash
+## 📁 Add Config to the Tool
+
+  - Move the .conf file to this location:
+  - GhostShadX/config/wg0.conf
+  - ✅ Rename it to {wg0.conf} (exact name required)
+    
+---
+
+
+## 🚀 How to Run
+
+
+
+```
 git clone https://github.com/Krishna-coder6272/GhostShadX.git
 cd GhostShadX
 pip install -r requirements.txt
+sudo apt update
+sudo apt install wireguard iptables resolvconf -y
+cd GhostShadX
+python3 main.py
+```
+
+---
+
+## 🖥️ GUI Mode
+GhostShadX also supports a graphical interface using Tkinter.
+The GUI launches from the main menu or can be called directly via:
+
+```
+sudo python3 gui_int.py
+```
+
+---
+
+## 📁 Folder Structure
+
+```
+GhostShadX/
+├── config/
+│   └── wg0.conf         ← Your VPN config
+├── modules/
+│   ├── vpn_control.py
+│   ├── kill_switch.py
+│   ├── log_cleaner.py
+│   ├── public_ip.py
+├── gui/
+│   └── interface.py      ← Optional GUI
+├── main.py
+└── README.md
+```
 
 
 ---
 
-## 🔥 VPN Setup Guide (IMPORTANT)
-To use GhostShadX, you must add your own VPN configuration file (WireGuard). It will not work out of the box unless you do this setup.
+## 🛡️ Use Cases
+
+- Internship/college cybersecurity projects
+- Red team or penetration testing toolkit
+- VPN leak test automation
+- Privacy protection tools
+- Network isolation with Kill Switch
 
 ---
 
-## ✅ How to Get a Free VPN Config (via ProtonVPN)
-   1-Go to: https://account.protonvpn.com/login
-   2-Sign up / Login with a free account
-   3-Go to Downloads → WireGuard Config Generator
-   4-Select:
-         -Platform: GNU/Linux
-         -Server: Any free server (e.g., NL-FREE#226)
-         -Device Name: GhostShadX-WG
-         -Click Create and download the .conf file
+## 🖥️ Tech Stack
+
+
+- Python 3
+- WireGuard
+- iptables
+- Tkinter (GUI)
 
 ---
 
-## 📂 Where to Place the Config?
-Move the downloaded file to this location:
 
-``bash
-GhostShadX/config/wg0.conf
+## 👨‍💻 Developed By:
+
+- Krishna Sahu
+- Cybersecurity Intern | Red Teamer | Python Developer
+- GitHub: Krishna-coder6272
+- LinkedIn: https://www.linkedin.com/in/krishna-sahu-66a1b7275/
+
+
+
+
+
+
+
