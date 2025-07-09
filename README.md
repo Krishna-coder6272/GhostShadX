@@ -17,6 +17,10 @@ An advanced Python-based **VPN control & privacy management tool** with support 
 
 ---
 
+## Screenshots
+
+![GUI](https://github.com/user-attachments/assets/cafdd1a7-e46d-4887-949c-ec69e8b50b1f)
+
 
 
 
@@ -68,7 +72,7 @@ GhostShadX also supports a graphical interface using Tkinter.
 The GUI launches from the main menu or can be called directly via:
 
 ```
-sudo python3 gui_int.py
+sudo python3 gui_qt.py
 ```
 
 ---
